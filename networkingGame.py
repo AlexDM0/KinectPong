@@ -25,8 +25,8 @@ class networkingGame(basicGame):
     def initializeNetworking(self,dedicated_server = False):        
         self.dedicated_server = dedicated_server
         self.start_reconnect = False
-#         self.networking = networking(5560,5565,5570,"http://www.avalondesigns.nl/ip_overlord")
-        self.networking = networking(5560,5565,5570,"http://94.210.7.227:6900/php")
+        self.networking = networking(5560,5565,5570,"http://www.avalondesigns.nl/ip_overlord")
+#         self.networking = networking(5560,5565,5570,"http://94.210.7.227:6900/php")
         self.networking.setup()
         self.assignUsers()
         self.keep_alive_time = time.time()
